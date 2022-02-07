@@ -1,4 +1,4 @@
-package Problems;
+package oopsConcepts.Inheritance.Problems;
 
 import java.util.Scanner;
 public class BasketProblem {

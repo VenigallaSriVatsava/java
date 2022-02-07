@@ -1,5 +1,7 @@
 package ControlLoops;
 
+import models.Student;
+
 public class ControlLoops {
 
     public static void main(String[] args) {
@@ -32,7 +34,8 @@ public class ControlLoops {
       else(conditionB1) {
           Statement3; }
           */
-
+      String firstName = "";
+      Student student1 = new Student();
         int i = 1;
         int j = 5;
         int k = 7;
@@ -90,6 +93,32 @@ public class ControlLoops {
      */
 
         // example
+
+        for(int m=0; m<=2; m++)
+            switch (m) {
+                case 0:
+                System.out.println("m is zero");
+                break;
+                case 1:
+                System.out.println("m is one");
+                break;
+                case 2:
+                System.out.println("m is two");
+                break;
+                default:        // it is used if all cases are not satisfied
+                    System.out.println("m is greater than two");
+        }
+
+
+
+
+
+
+
+
+
+
+
     }
 
 }

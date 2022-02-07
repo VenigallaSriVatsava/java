@@ -1,7 +1,7 @@
 package Arrays;
 
 public class Arrays {
-    // declaring a one dimensional array
+  /*  // declaring a one dimensional array
     // array index always starts with '0'
 
     int a[] = {1,1,3};       // assigns the values into the array directly
@@ -37,4 +37,6 @@ public class Arrays {
 
 
 }
+
+*/
 }
