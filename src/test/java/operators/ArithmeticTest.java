@@ -34,5 +34,6 @@ class ArithmeticTest {
     void modulus() {
         int actual =  obj.modulus(9,7);
         assertEquals(2,actual);
+
     }
 }

@@ -7,43 +7,39 @@ public class Bitwise {
     they will be also used the update the values.
      */
 
-    int a = 5;
-    int b = 6;
-    int c;
 
-    public int or() {
-        c = a | b;
-        return c;
+
+    public int or(int a,int b) {
+        return a | b;
     }
 
-    public int and() {
-        c = a & b;
-        return c;
+    public int and(int a,int b) {
+        return a & b;
     }
 
 
-    public int compliment() {   // returns one's compliment of operand
-        c = ~c;
-        return c;
-
+   public int compliment(int a) {   // returns one's compliment of operand
+       return ~a;
+   }
          /*
-         one's compliment means it converts binary one's into zeroes and zeroes int one's
+         one's compliment means it adds binary one to the input
            eg: one's compliment of 6
            binary equivalent of 6 is 0110
-           1's equivalent will be :  1001
-           decimal equivalent of the output is 9
+           1's equivalent will be :  0001
+           decimal equivalent of the output is 7
+           and it adds minus sign infront
      */
+
+
+    public int xor(int a,int b) {
+        return a ^ b;
     }
-
-    public int xor() {
-        c = a ^ b;
-        return c;
-
         /*
           xor means if two inputs have same value either true or false then it returns '0'
           if two inputs are different it returns '1' as output
          */
-    }
+
+
 
     // SHIFT OPERATOR
     /*

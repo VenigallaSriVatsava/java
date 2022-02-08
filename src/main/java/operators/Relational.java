@@ -7,36 +7,30 @@ public class Relational {
     they are greater-than(>),less-than(<),equals(==),greater-than or equals(>=),less-than or equals(<=)
      */
 
-    int d = 4;
-    int e = 3;
-    boolean f;
+
+
 
     public boolean equals(int a, int b) {
-        a = 9;
-        b = 6;
-        boolean c = (a==b);
-        return c;
+        return (a==b);
+
     }
 
     public boolean greaterthan(int a, int b)  {
-        a = 9;
-        b = 6;
-        boolean c = (a>b);
-        return c;
+
+        return (a>b);
+
     }
 
-    public boolean lessthan() {
-        f = (d<e);
-        return f;
+    public boolean lessthan(int a,int b) {
+        return (a<b);
+
     }
 
-    public boolean greaterthanOrEquals() {
-        f = (d>=e);
-        return f;
+    public boolean greaterthanOrEquals(int a,int b) {
+        return (a>=b);
     }
 
-    public void lessthanOrEquals() {
-        f = (d>=e);
-        System.out.println(f);
+    public boolean lessthanOrEquals(int a,int b) {
+       return (a<=b);
     }
 }

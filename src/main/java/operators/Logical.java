@@ -16,15 +16,41 @@ public class Logical {
        consider 0 and 1 as false and true outputs for given conditions
      */
 
-    public boolean and(boolean a,boolean b) {
-        return a && b;
+    public boolean evenAndPrime(int a) {
+        boolean even = (a%2==0);
+        boolean prime = true;
+        if(a==1 || a==0) {
+            prime = false;
+        }
+        for(int i = 2; i<=a/2; i++) {
+            if(a%i == 0) {
+                prime = false;
+            }
+        }
+
+            return even && prime;
     }
 
-    public boolean or(boolean a,boolean b) {
-        return a || b;
+    public boolean evenOrPrime(int a) {
+        boolean even = (a%2==0);
+        boolean prime = true;
+        if(a==1 || a==0) {
+            prime = false;
+        }
+        for(int i = 2; i<=a/2; i++) {
+            if(a%i == 0) {
+                prime = false;
+            }
+        }
+
+        return even || prime;
     }
 
-    public boolean not(boolean a) {
-        return !a;
+    public boolean not(int a) {
+        boolean even = false;
+        if(a%2==0) {
+            even = true;
+        }
+        return !even;
     }
 }
