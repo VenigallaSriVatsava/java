@@ -21,13 +21,13 @@ class UnaryTest {
 
     @Test
     void increment() {
-        int actual = obj.increment(7,9);
+        int actual = obj.increment(7);
         assertEquals(7,actual);
     }
 
     @Test
     void decrement() {
-        int actual = obj.decrement(3,1);
+        int actual = obj.decrement(3);
         assertEquals(2,actual);
     }
 }
