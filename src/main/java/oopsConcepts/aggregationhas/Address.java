@@ -1,7 +1,7 @@
-package oopsConcepts.aggregation;
+package oopsConcepts.aggregationhas;
 
 public class Address {
-  private   String city;
+  private   String city ;
    private String state;
 
     public String getCity() {
@@ -19,4 +19,5 @@ public class Address {
     public void setState(String state) {
         this.state = state;
     }
+
 }
