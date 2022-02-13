@@ -39,12 +39,4 @@ public class Bitwise {
           if two inputs are different it returns '1' as output
          */
 
-
-
-    // SHIFT OPERATOR
-    /*
-    bitwise shift operator is used to shift the binary bits by either left or right based on the operator used.
-    right shift operator shifts right side and left shift operator shifts it by left side
-     */
-
 }
