@@ -1,8 +1,8 @@
 package oopsConcepts.polymorphism;
 
-import oopsConcepts.Bicycle;
-import oopsConcepts.Car;
-import oopsConcepts.MotorCycle;
+import oopsConcepts.polymorphism.methodoverriding.Bicycle;
+import oopsConcepts.polymorphism.methodoverriding.Car;
+import oopsConcepts.polymorphism.methodoverriding.MotorCycle;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

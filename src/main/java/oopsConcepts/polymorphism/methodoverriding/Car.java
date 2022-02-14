@@ -1,6 +1,6 @@
-package oopsConcepts;
+package oopsConcepts.polymorphism.methodoverriding;
 
-public class Car extends Vehicle {
+public class Car extends Vehicle { // child class
     private String fuelType;
     private int SeatingCap;
     private int handling;

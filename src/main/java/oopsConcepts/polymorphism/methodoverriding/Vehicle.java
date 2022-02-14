@@ -1,6 +1,6 @@
-package oopsConcepts;
+package oopsConcepts.polymorphism.methodoverriding;
 
-public class Vehicle {
+public class Vehicle {  // parent class
     private String make;
     private String model;
     private int noOfWheels;
