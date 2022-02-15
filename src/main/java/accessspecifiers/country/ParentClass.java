@@ -3,9 +3,10 @@ package accessspecifiers.country;
 public class ParentClass {
     private String privateVariable;
     public String publicVariable;
-    protected  int protectedVariable;
+    protected int protectedVariable;
     int packagePrivate;
-public static int iamStatic;
+    public static int iamStatic;
+
     public String getPrivateVariable() {
         return privateVariable;
     }
@@ -14,7 +15,7 @@ public static int iamStatic;
         this.privateVariable = privateVariable;
     }
 
-
+// TODO write different access specifiers methods for checking in both child class
 
     //    public India(int a) {
 //
@@ -37,9 +38,6 @@ public static int iamStatic;
 //
 //    private void president(){} // only accessible within the class
 //
-
-
-
 
 
 }

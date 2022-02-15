@@ -1,8 +1,8 @@
-package ControlLoops;
+package ControlStatements;
 
 import models.Student;
 
-public class ControlLoops {
+public class ControlStatements {
 
     public static void main(String[] args) {
 
@@ -18,7 +18,7 @@ public class ControlLoops {
         int b = 8;
 
         if (a > b)
-            System.out.println(a+ " > "+b);
+            System.out.println(a + " > " + b);
         else {
             System.out.println("a>b");
         }
@@ -34,8 +34,8 @@ public class ControlLoops {
       else(conditionB1) {
           Statement3; }
           */
-      String firstName = "";
-      Student student1 = new Student();
+        String firstName = "";
+        Student student1 = new Student();
         int i = 1;
         int j = 5;
         int k = 7;
@@ -74,7 +74,7 @@ public class ControlLoops {
         } else {
             System.out.println("n");
         }
-
+// TODO https://1.bp.blogspot.com/-nh6ZkX6q_Dk/Xfc0S5zftiI/AAAAAAAAE24/y2brpWATADoxtCdeKt7Fv7nKaxx9dvTeQCLcBGAsYHQ/s1600/Screenshot%2B%2528463%2529.png
     /* SWITCH
      switch(expression) {
      case value1;
@@ -94,29 +94,20 @@ public class ControlLoops {
 
         // example
 
-        for(int m=0; m<=2; m++)
+        for (int m = 0; m <= 2; m++)
             switch (m) {
                 case 0:
-                System.out.println("m is zero");
-                break;
+                    System.out.println("m is zero");
+                    break;
                 case 1:
-                System.out.println("m is one");
-                break;
+                    System.out.println("m is one");
+                    break;
                 case 2:
-                System.out.println("m is two");
-                break;
+                    System.out.println("m is two");
+                    break;
                 default:        // it is used if all cases are not satisfied
                     System.out.println("m is greater than two");
-        }
-
-
-
-
-
-
-
-
-
+            }
 
 
     }

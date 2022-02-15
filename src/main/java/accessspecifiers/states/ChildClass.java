@@ -11,3 +11,4 @@ public class ChildClass extends ParentClass {
         System.out.println("i can access protected variable " + obj.protectedVariable);
     }
 }
+// TODO check access for public variable, and protected and public methods
