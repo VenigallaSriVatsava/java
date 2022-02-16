@@ -1,4 +1,4 @@
-package accessspecifiers.country;
+package accessspecifiers.ClassA;
 
 public class ParentClass {
     private String privateVariable;
@@ -15,7 +15,23 @@ public class ParentClass {
         this.privateVariable = privateVariable;
     }
 
-// TODO write different access specifiers methods for checking in both child class
+    public void name() {
+        System.out.println("vatsav");
+    }
+
+    private void number() {
+        System.out.println("6300099999");
+    }
+
+    void age() {
+        System.out.println("21");
+    }
+
+    protected void dob() {
+        System.out.println("17th february,2000");
+    }
+
+// TODO2 write different access specifiers methods for checking in both child class -- Done
 
     //    public India(int a) {
 //
