@@ -2,19 +2,19 @@ package Static;
 
 public class StudentDetails {
     String name;
-    String joiningDate;
-   static int joiningYear = 2022;
+    int age;
+    static String college = "gmr";
 
 
-
-    StudentDetails(String n,String j){
-       name = n;
-       joiningDate = j;
+    StudentDetails(String n, int a) {
+        name = n;
+        age = a;
     }
 
     void joiningDetails() {
 
-        System.out.println("Student " +name +"joined in" +joiningDate +"," +joiningYear);
+        System.out.println("Student " + name + "age is " + age + " from college " + college);
     }
 
 }
+// TODO

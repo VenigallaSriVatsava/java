@@ -14,8 +14,8 @@ public class ChildClass extends ParentClass {
         System.out.println("i can access protected variable " + obj.protectedVariable);
         System.out.println("i can access private variable through getter and setter " + obj.getPrivateVariable());
 
-        obj.name(); // public method in parent class which can be accessed by any class
-        obj.age();  // default method in parent class which is package private,it means it can be accessed within same package files
-        obj.dob();  // protected method in parent class which can be accessed by child class objects
+        obj.publicMethod(); // public method in parent class which can be accessed by any class
+        obj.defaultMethod();  // default method in parent class which is package private,it means it can be accessed within same package files
+        obj.protectedMethod();  // protected method in parent class which can be accessed by child class objects
     }
 }

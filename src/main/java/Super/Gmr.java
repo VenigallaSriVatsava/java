@@ -1,6 +1,6 @@
 package Super;
 
-public class Gmr extends College {
+public class Gmr implements College {
 
     /*
     The super keyword in Java is a reference variable which is used to refer immediate parent class object.
@@ -8,9 +8,9 @@ public class Gmr extends College {
      */
 
 
-    String name = "GMRIT";
-    int number;
+    static String name = "GMRIT";
 
+    @Override
     public void address() {
         String city = "chennai";
         String area = "beach road";
@@ -19,7 +19,7 @@ public class Gmr extends College {
 
     public void details() {
         address();    // refers to address method of the present class i.e; Gmr class
-        super.address();  // refers to address method of parent class means college class
+        //super.address();  // refers to address method of parent class means college class
     }
 
     public static void main(String[] args) {
@@ -27,6 +27,8 @@ public class Gmr extends College {
         obj.details(); // refers to details method
 
     }
+
+
 }
-// TODO1 change it to is-a relationship - Done
+// TODO super example
 

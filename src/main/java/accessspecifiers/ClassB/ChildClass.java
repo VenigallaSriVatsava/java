@@ -10,8 +10,8 @@ public class ChildClass extends ParentClass {
         obj.protectedVariable = 7;
         System.out.println("i can access protected variable " + obj.protectedVariable);
 
-        obj.name();  // public method in parent class which can be accessed by any class
-        obj.dob();   // protected method in parent class which can be accessed by subclasses of parent class
+        obj.publicMethod();  // public method in parent class which can be accessed by any class
+        obj.protectedMethod();   // protected method in parent class which can be accessed by subclasses of parent class
     }
 }
 // TODO2 check access for public variable, and protected and public methods -- Done
