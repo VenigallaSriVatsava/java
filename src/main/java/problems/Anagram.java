@@ -7,7 +7,7 @@ public class Anagram {
     static Anagram obj = new Anagram();
 
     public static void main(String[] args) {
-        obj.checkAnagram("stop", "spot");
+        obj.checkAnagram_withoutHashMap("java", "javc");
     }
 
     public boolean checkAnagram(String input1, String input2) {
@@ -53,8 +53,22 @@ public class Anagram {
     }
 
     public boolean checkAnagram_withoutHashMap(String a, String b) {
+        if (a == null || b == null || a.length() == 0 || b.length() == 0) {
+            throw new RuntimeException("invalid input");
+        }
+        if (a.length() != b.length()) {
+            return false;
+        }
 
-
+        char conv[] = a.toCharArray();
+        for (char character : conv) {
+            int index = b.indexOf(character);
+            if (index != -1) {
+                b = b.substring(0, index) + b.substring(index + 1, b.length());
+            } else {
+                return false;
+            }
+        }
         return true;
     }
 }
