@@ -4,11 +4,6 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class Anagram {
-    static Anagram obj = new Anagram();
-
-    public static void main(String[] args) {
-        obj.checkAnagram_withoutHashMap("java", "javc");
-    }
 
     public boolean checkAnagram(String input1, String input2) {
         if (input1 == null || input2 == null || input1.length() == 0 || input2.length() == 0) {
@@ -33,14 +28,7 @@ public class Anagram {
                 mapCount2.put(input2.charAt(j), 1);
             }
         }
-//        for (int k = 0; k < input1.length() && k < input2.length(); k++) {
-//            int value1 = mapCount1.get(input1.charAt(k));
-//            int value2 = mapCount2.get(input2.charAt(k));
-//
-//            if (value1 != value2) {
-//                output = false;
-//            }
-//        }
+
         for (Map.Entry<Character, Integer> entry1 : mapCount1.entrySet()) {
             if (mapCount2.get(entry1.getKey()) == null || mapCount2.get(entry1.getKey()) != entry1.getValue()) {
                 return false;
@@ -59,16 +47,23 @@ public class Anagram {
         if (a.length() != b.length()) {
             return false;
         }
-
-        char conv[] = a.toCharArray();
-        for (char character : conv) {
-            int index = b.indexOf(character);
-            if (index != -1) {
-                b = b.substring(0, index) + b.substring(index + 1, b.length());
+        int i = 0;
+        int j = 0;
+        while (j < b.length()) {
+            if (a.charAt(i) == b.charAt(j)) {//stop posts
+                b = b.substring(0, j) + b.substring(j + 1);
+                a = a.substring(i + 1);
+                j = 0;
             } else {
-                return false;
+                j++;
             }
+
         }
+        if (a.length() != 0 || b.length() != 0) {
+            return false;
+        }
+
+
         return true;
     }
 }
